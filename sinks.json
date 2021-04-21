@@ -1,0 +1,25 @@
+{
+    "default": "pc",
+
+    "pc": {
+        "pacmd_sink": "alsa_output.usb-FiiO_DigiHug_USB_Audio-01.iec958-stereo",
+        "pacmd_card": "alsa_card.usb-FiiO_DigiHug_USB_Audio-01",
+
+        "xrandr_name": "DP-0",
+        "resolution": "2560x1080",
+        "rate": "144.00"
+    },
+
+    "tv" : {
+        "pacmd_sink": "alsa_output.pci-0000_0c_00.1.hdmi-stereo",
+        "pacmd_card": "alsa_card.pci-0000_0c_00.1",
+
+        "xrandr_name": "HDMI-0",
+        "resolution": "1920x1080",
+        "rate": "60.00",
+
+        "launch": [
+            ["steam", "-bigpicture"]
+        ]
+    }
+}
